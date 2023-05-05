@@ -6,4 +6,18 @@
 
 #INICIO
 
+try:
+    num1 = float(input("Ingrese el primer numero:"))
+    num2 = float(input("Ingrese el segundo numero:"))
+
+
+    resultado= num1 / num2
+
+    print("El resultado de la division es", resultado)
+
+except ZeroDivisionError:
+    # Manejar la excepción ZeroDivisionError y mostrar un mensaje de error por pantalla
+    print("Error: no se puede dividir entre cero.")
+
+
 #FIN

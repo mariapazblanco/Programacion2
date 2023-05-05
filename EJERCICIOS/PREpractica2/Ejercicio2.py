@@ -4,4 +4,13 @@
 
 #INICIO
 
+numeros= input("Ingrese una lista de numeros separados por espacio")
+numeros = list(map(int, numeros.split()))
+numeros_impares=[]
+for numeros in numeros:
+    if numeros % 2 != 0:
+        numeros_impares.append(numeros)
+print("La lista original es:", numeros)
+print("La lista de numeros impares es:", numeros_impares)
+
 #FIN
