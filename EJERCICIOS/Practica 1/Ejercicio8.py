@@ -68,6 +68,7 @@ diccionario = {
 # COMPLETAR - INICIO
 
 clave1=diccionario.get("clave1")
+print(clave1)
 
 # COMPLETAR - FIN
 
@@ -90,6 +91,7 @@ diccionario_2 = {
 # COMPLETAR - INICIO
 
 clave5=diccionario_2.get("clave5", 5)
+print(clave5)
 
 # COMPLETAR - FIN
 
@@ -109,7 +111,8 @@ diccionario_3 = {
 
 # COMPLETAR - INICIO
 
-keys=list(diccionario_3.keys())
+claves = list(diccionario_3.keys())
+print(claves)
 
 # COMPLETAR - FIN
 
@@ -129,7 +132,8 @@ diccionario_4 = {
 
 # COMPLETAR - INICIO
 
-values=list(diccionario_4.values())
+values = list(diccionario_4.values())
+print(values)
 
 # COMPLETAR - FIN
 
@@ -151,6 +155,7 @@ diccionario_5 = {
 # COMPLETAR - INICIO
 
 items=list(diccionario_5.items())
+print(items)
 
 # COMPLETAR - FIN
 
@@ -178,6 +183,7 @@ diccionario_7 = {
 # COMPLETAR - INICIO
 
 diccionario_6.update(diccionario_7)
+print(diccionario_6)
 
 # COMPLETAR - FIN
 

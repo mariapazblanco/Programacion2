@@ -10,10 +10,11 @@ def maximo_basico(a: float, b: float) -> float:
         - No utilizar la función max
     """
 
-    mayor = a
-    if b > mayor:
-        mayor = b
-    return mayor
+    if a > b:
+        return a
+    if b > a:
+        return b
+    return a
 
 
 # NO MODIFICAR - INICIO

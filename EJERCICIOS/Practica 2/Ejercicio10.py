@@ -1,10 +1,7 @@
 from typing import List, Union
 
 ###############################################################################
-
-
-def maximo_recursivo(*args) -> float:
-    """Toma una cantidad arbitraria de números y devuelve el mayor.
+"""Toma una cantidad arbitraria de números y devuelve el mayor.
 
     Restricciónes:
         - No utilizar la función max
@@ -12,6 +9,14 @@ def maximo_recursivo(*args) -> float:
         - Resolver de manera recursiva
     """
 
+
+def maximo_recursivo(*args) -> float:
+    if len(args) == 1:
+        # Caso base: si solo queda un elemento, devolverlo
+        return args[0]
+    else:
+        # Caso recursivo: comparar los dos primeros elementos y devolver el máximo
+        return maximo_recursivo(args[0], maximo_recursivo(*args[1:]))
 
 # NO MODIFICAR - INICIO
 if __name__ == "__main__":
@@ -35,11 +40,15 @@ def sumatoria_reduce(n: int) -> int:
     Referencia: https://docs.python.org/3/library/functools.html#functools.reduce  # noqa: E501
     """
 
+    return reduce(lambda x, y: x + y, range(1, n + 1))
+
 
 # NO MODIFICAR - INICIO
 if __name__ == "__main__":
     assert sumatoria_reduce(1) == 1
     assert sumatoria_reduce(100) == 5050
+
+
 # NO MODIFICAR - FIN
 
 
@@ -56,7 +65,7 @@ def numeros_al_final_sorted(lista: List[Union[float, str]]) -> List[Union[float,
 
     Referencia: https://docs.python.org/3/library/functions.html#sorted
     """
-
+return sorted(lista, key=lambda x: isinstance(x, str))
 
 # NO MODIFICAR - INICIO
 assert numeros_al_final_sorted([3, "a", 1, "b", 10, "j"]) == ["a", "b", "j", 3, 1, 10]  # noqa: E501

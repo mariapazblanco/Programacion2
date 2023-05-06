@@ -17,6 +17,8 @@ conjunto_1.add(numero_1)
 conjunto_1.add(numero_2)
 conjunto_1.add(numero_3)
 
+print(conjunto_1)
+
 
 # COMPLETAR - FIN
 
@@ -44,6 +46,8 @@ conjunto_2.add("6")
 conjunto_2.add(domicilio)
 conjunto_2.add("5")
 
+print(conjunto_2)
+
 
 # COMPLETAR - FIN
 
@@ -59,7 +63,8 @@ conjunto_04 = {12, 4, 10, 21, 78}
 
 # COMPLETAR - INICIO
 
-conjunto_interseccion=conjunto_03 & conjunto_04
+conjunto_interseccion = conjunto_03 & conjunto_04
+print(conjunto_interseccion)
 
 # COMPLETAR - FIN
 
@@ -74,7 +79,8 @@ conjunto_04 = {12, 4, 10, 21, 78}
 
 # COMPLETAR - INICIO
 
-conjunto_interseccion=conjunto_03.intersection(conjunto_04)
+conjunto_interseccion = conjunto_03.intersection(conjunto_04)
+print(conjunto_interseccion)
 
 # COMPLETAR - FIN
 
@@ -90,7 +96,8 @@ conjunto_06 = {5, 6, 7, 8}
 
 # COMPLETAR - INICIO
 
-conjunto_union=conjunto_05 | conjunto_06
+conjunto_union = conjunto_05 | conjunto_06
+print(conjunto_union)
 
 # COMPLETAR - FIN
 
@@ -106,7 +113,8 @@ conjunto_06 = {5, 6, 7, 8}
 
 # COMPLETAR - INICIO
 
-conjunto_union=conjunto_05.union(conjunto_06)
+conjunto_union = conjunto_05.union(conjunto_06)
+print(conjunto_union)
 
 # COMPLETAR - FIN
 
@@ -122,7 +130,8 @@ conjunto_08 = {2, 4, 6, 8}
 
 # COMPLETAR - INICIO
 
-conjunto_diferencia=conjunto_07-conjunto_08
+conjunto_diferencia = conjunto_07-conjunto_08
+print(conjunto_diferencia)
 
 # COMPLETAR - FIN
 
@@ -138,7 +147,8 @@ conjunto_08 = {2, 4, 6, 8}
 
 # COMPLETAR - INICIO
 
-conjunto_diferencia=conjunto_07.difference(conjunto_08)
+conjunto_diferencia = conjunto_07.difference(conjunto_08)
+print(conjunto_diferencia)
 
 # COMPLETAR - FIN
 
@@ -146,7 +156,7 @@ assert conjunto_diferencia == {1, 3, 5, 7}
 
 
 """
-Dados dos conjuntos calcular su diferencia diferencia simetrica utiilizando el caracter circunflejo
+Dados dos conjuntos calcular su diferencia simetrica utiilizando el caracter circunflejo ^
 """
 
 conjunto_09 = {1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -154,7 +164,8 @@ conjunto_10 = {1, 2, 3, 5, 6, 7, 8}
 
 # COMPLETAR - INICIO
 
-conjunto_diferencia_simetrica=conjunto_09 ^ conjunto_10
+conjunto_diferencia_simetrica = conjunto_09 ^ conjunto_10
+print(conjunto_diferencia_simetrica)
 
 # COMPLETAR - FIN
 
@@ -170,7 +181,8 @@ conjunto_10 = {1, 2, 3, 5, 6, 7, 8}
 
 # COMPLETAR - INICIO
 
-conjunto_diferencia_simetrica=conjunto_09.symmetric_difference(conjunto_10)
+conjunto_diferencia_simetrica = conjunto_09.symmetric_difference(conjunto_10)
+print(conjunto_diferencia_simetrica)
 
 # COMPLETAR - FIN
 
