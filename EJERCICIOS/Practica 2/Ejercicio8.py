@@ -14,6 +14,19 @@ precio_articulos = [100.48, 16.42, 5.20]
 
 
 def combinar_basico(nombres: List[str], precios: List[float]) -> Tuple[Any]:
+    resultado = []
+    for i in range(len(nombres)):
+        nombre = nombres[1]
+        precio = precios[1]
+
+        resultado.append((nombre, precio))
+
+    return tuple(resultado)
+
+    combinacion = combinar_basico(nombre_articulos, precio_articulos, )
+
+
+
     """Toma dos listas y devuelve una tupla de duplas con los componentes de
     las listas.
 
@@ -22,6 +35,7 @@ def combinar_basico(nombres: List[str], precios: List[float]) -> Tuple[Any]:
         - Utilizar la función range.
         - Utilizar índices.
     """
+
 
 
 # NO MODIFICAR - INICIO
@@ -42,6 +56,19 @@ id_articulos = [6852, 1459, 3578]
 
 
 def combinar_enumerate(nombres: List[str], precios: List[float], ids: List[int]) -> Tuple[Any]:  # noqa: E501
+
+    resultado[]
+    for i, nombre in enumerate(nombres):
+        precio = precios[1]
+        id_ = ids[1]
+
+        tupla = (id_, nombre, precio, )
+        resultado.append(tupla)
+
+    return tuple(resultado)
+
+    combinacion = combinar_enumerate(nombre_articulos, precio_articulos, id_articulos)
+
     """Re-Escribir utilizando enumerate y agregando un nuevo componente.
 
     Restricción:
@@ -70,7 +97,16 @@ assert combinar_enumerate(nombre_articulos, precio_articulos, id_articulos) == r
 id_articulos = [6852, 1459, 3578]
 
 
-def combinar_zip(nombres: List[str], precios: List[float], ids: List[int]) -> Tuple[Any]:  # noqa: E501
+def combinar_zip(nombres: List[str], precios: List[float], ids: List[int]) -> Tuple[Any]: # noqa: E501
+
+    resultado=[]
+    for nombre, precio, id_ in zip(nombres, precios, ids):
+        tupla = (id_, nombre, precio)
+        resultado.append(tupla)
+    return tuple(resultado)
+
+    combinacion = combinar_zip(nombre_articulos, precio_articulos, id_articulos)
+
     """Re-Escribir utilizando zip.
 
     Restricción:
@@ -102,6 +138,20 @@ importado_articulos = [True, False, True]
 
 
 def combinar_zip_args(*args) -> Tuple[Any]:
+
+    # Crear una lista vacía para almacenar las tuplas
+    resultado = []
+
+    # Iterar sobre las tuplas formadas por los elementos correspondientes de cada lista en paralelo utilizando zip
+    for elementos in zip(*args):
+        # Crear una tupla con los elementos de cada lista y agregarla a la lista de resultados
+        tupla = tuple(elementos)
+        resultado.append(tupla)
+
+    # Convertir la lista de tuplas en una tupla y devolverla
+    return tuple(resultado)
+
+    combinacion = combinar_zip_args(nombre_articulos, precio_articulos, id_articulos, categoria_articulos,importado_articulos)
     """Re-Escribir utilizando zip y una cantidad arbitraria de componentes.
 
     Restricción:
