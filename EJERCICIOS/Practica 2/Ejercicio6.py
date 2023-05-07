@@ -2,9 +2,7 @@
 
 from typing import List, Union
 
-
-def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float, str]]:  # noqa: E501
-    """Toma una lista de enteros y strings y devuelve una lista con todos los
+"""Toma una lista de enteros y strings y devuelve una lista con todos los
     elementos numéricos al final.
 
     Restricciones:
@@ -12,6 +10,8 @@ def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float,
         - Utilizar la función type.
         - No utilizar índices.
     """
+def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float, str]]:  # noqa: E501
+
     numeros = []
     no_numeros = []
     for elementos in lista:
@@ -28,15 +28,15 @@ assert numeros_al_final_basico([3, "a", 1, "b", 10, "j"]) == ["a", "b", "j", 3, 
 
 
 ###############################################################################
-
-
-def numeros_al_final_comprension(lista: List[Union[float, str]]) -> List[Union[float, str]]:  # noqa: E501
-    """Re-escribir utilizando comprensión de listas.
+"""Re-escribir utilizando comprensión de listas.
 
     Restricciones:
         - No utilizar bucles.
         - Utilizar dos comprensiones de listas.
     """
+
+def numeros_al_final_comprension(lista: List[Union[float, str]]) -> List[Union[float, str]]:  # noqa: E501
+
 
     numeros = [elementos for elementos in lista if type(elementos == int)]
     no_numeros = [elementos for elementos in lista if type(elementos) != int ]

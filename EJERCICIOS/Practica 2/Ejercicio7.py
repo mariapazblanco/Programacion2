@@ -1,10 +1,7 @@
 """Any y Sets."""
 
 from typing import Any, Iterable
-
-
-def superposicion_basico(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:  # noqa: E501
-    """Toma dos listas y devuelve un booleano en base a si tienen al menos 1
+"""Toma dos listas y devuelve un booleano en base a si tienen al menos 1
     elemento en común.
 
     Restricciones:
@@ -12,11 +9,13 @@ def superposicion_basico(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool
         - Utilizar dos returns.
     """
 
-for elemento1 in lista_1:
-    for elemento2 in lista_2:
-        if elemento1 == elemento2:
-            return True
-return False
+def superposicion_basico(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:  # noqa: E501
+
+    for elemento1 in lista_1:
+        for elemento2 in lista_2:
+            if elemento1 == elemento2:
+                return True
+    return False
 
 
 # NO MODIFICAR - INICIO
@@ -27,15 +26,15 @@ assert not superposicion_basico(test_list, (2, "world", 30.85))
 
 
 ###############################################################################
-
-
-def superposicion_in(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
-    """Re-Escribir utilizando un sólo bucle y el operador IN.
+"""Re-Escribir utilizando un sólo bucle y el operador IN.
 
     Restricciones:
         - Utilizar un único bucle FOR.
         - Utilizar dos returns.
     """
+
+def superposicion_in(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
+
 
     for elementos in lista_1:
         if elementos in lista_2:
@@ -51,10 +50,7 @@ assert not superposicion_in(test_list, (2, "world", 30.85))
 
 
 ###############################################################################
-
-
-def superposicion_any(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
-    """Re-Escribir utilizando la funcion any.
+"""Re-Escribir utilizando la funcion any.
 
     Restricciones:
         - No utilizar bucles.
@@ -63,6 +59,9 @@ def superposicion_any(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
 
     Referencia: https://docs.python.org/3/library/functions.html#any
     """
+
+def superposicion_any(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
+
 
     return any(elementos in lista_2 for elementos in lista_1)
 
@@ -75,10 +74,7 @@ assert not superposicion_any(test_list, (2, "world", 30.85))
 
 
 ###############################################################################
-
-
-def superposicion_set(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
-    """Re-Escribir utilizando conjuntos (sets).
+"""Re-Escribir utilizando conjuntos (sets).
 
     Restricciones:
         - Resolver sólo utilizando operaciones de conjuntos
@@ -86,6 +82,9 @@ def superposicion_set(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
 
     Referencia: https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset  # noqa: E501
     """
+
+def superposicion_set(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
+
 
     set1 = set(lista_1)
     set2 = set(lista_2)

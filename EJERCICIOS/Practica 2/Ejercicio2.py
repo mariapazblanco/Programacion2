@@ -1,9 +1,6 @@
 """Comparaciones Encadenadas, Cantidad Arbitraria de Parámetros, Recursividad.
 """
-
-
-def maximo_encadenado(a: float, b: float, c: float) -> float:
-    """Toma 3 números y devuelve el máximo.
+"""Toma 3 números y devuelve el máximo.
 
     Restricciones:
         - Utilizar comparaciones encadenadas.
@@ -13,13 +10,15 @@ def maximo_encadenado(a: float, b: float, c: float) -> float:
 
     Referencia: https://docs.python.org/3/reference/expressions.html#comparisons # noqa: E501
     """
-max_num = a
-if b > max_num:
+
+def maximo_encadenado(a: float, b: float, c: float) -> float:
+
+    max_num = a
+    if b > max_num:
         max_num = b
     if c > max_num:
         max_num = c
     return max_num
-
 
 
 # NO MODIFICAR - INICIO
@@ -38,12 +37,11 @@ assert maximo_encadenado(24, 18, 18) == 24
 
 
 ###############################################################################
-
-
-def maximo_cuadruple(a: float, b: float, c: float, d: float) -> float:
-    """Re-escribir para que tome 4 parámetros, utilizar la función max.
+"""Re-escribir para que tome 4 parámetros, utilizar la función max.
 
     Referencia: https://docs.python.org/3/library/functions.html#max"""
+
+def maximo_cuadruple(a: float, b: float, c: float, d: float) -> float:
 
     return max(a, b, c, d)
 
@@ -57,13 +55,14 @@ assert maximo_cuadruple(24, 9, 18, 30) == 30
 
 
 ###############################################################################
-
-
-def maximo_arbitrario(*args) -> float:
-    """Re-escribir para que tome una cantidad arbitraria de parámetros.
+"""Re-escribir para que tome una cantidad arbitraria de parámetros.
     Referencia: https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists # noqa: E501
     """
-return max(args)
+
+def maximo_arbitrario(*args) -> float:
+
+    return max(args)
+
 
 # NO MODIFICAR - INICIO
 assert maximo_arbitrario(1, 10, 5, -5) == 10
