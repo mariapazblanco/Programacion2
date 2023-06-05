@@ -11,7 +11,7 @@ riego_activado = True
 
 # COMPLETAR - INICIO
 
-piso_mojado=esta_lloviendo or riego_activado
+piso_mojado = esta_lloviendo or riego_activado
 
 # COMPLETAR - FIN
 
@@ -29,7 +29,7 @@ area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
 
-area_mayor_a_cinco=not(area_cuadrado <=5)
+area_mayor_a_cinco = not(area_cuadrado <=5)
 
 # COMPLETAR - FIN
 
@@ -46,7 +46,7 @@ numero_2 = 50
 
 # COMPLETAR - INICIO
 
-resultado=numero_1 %7 ==0 and numero_2 %7 ==1
+resultado=numero_1 %7 == 0 and numero_2 %7 ==1
 
 # COMPLETAR - FIN
 

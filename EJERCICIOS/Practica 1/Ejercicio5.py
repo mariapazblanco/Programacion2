@@ -12,7 +12,7 @@ variable_03 = "a todos!"
 
 # COMPLETAR - INICIO
 
-strings_concatenados== variable_01 + variable_02 + variable_03
+strings_concatenados == variable_01 + variable_02 + variable_03
 
 # COMPLETAR - FIN
 
@@ -31,7 +31,7 @@ usar operadores).
 
 # COMPLETAR - INICIO
 
-strings_concatenados== "Mama ""estoy concatenando""strings!"
+strings_concatenados == "Mama ""estoy concatenando""strings!"
 
 # COMPLETAR - FIN
 
@@ -50,7 +50,7 @@ variable_03 = " pesos a un amigo."
 
 # COMPLETAR - INICIO
 
-strings_concatenados=variable_01 + str(variable_02) + variable_03
+strings_concatenados = variable_01 + str(variable_02) + variable_03
 
 # COMPLETAR - FIN
 
@@ -71,7 +71,7 @@ variable_05 = "Ezequiel"
 
 # COMPLETAR - INICIO
 
-strings_concatenados= "{}{}{}{}{} Se llama {}".format(variable_01,variable_02,variable_03,variable_04,variable_05)
+strings_concatenados = "{}{}{}{}{} Se llama {}".format(variable_01,variable_02,variable_03,variable_04,variable_05)
 
 # COMPLETAR - FIN
 

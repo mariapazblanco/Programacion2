@@ -31,7 +31,7 @@ modelo_de_auto = 1998
 
 # COMPLETAR - INICIO
 
-comparar_marca_y_modelo= (marca_del_auto != "Ford") and (modelo_de_auto <= 2000)
+comparar_marca_y_modelo = (marca_del_auto != "Ford") and (modelo_de_auto <= 2000)
 
 # COMPLETAR - FIN
 
@@ -51,7 +51,7 @@ superficie_de_campo_03 = 8512
 
 # COMPLETAR - INICIO
 
-comparar_superficie= superficie_de_campo_01 < superficie_de_campo_02 > superficie_de_campo_03
+comparar_superficie = superficie_de_campo_01 < superficie_de_campo_02 > superficie_de_campo_03
 
 # COMPLETAR - FIN
 
